@@ -28,7 +28,6 @@ def draw_map(tile_map, tile_sprite):
         render_row = [ next(iter(tile_sprite.get(col, "?").values())) for col in row ]
         render_map.append(render_row)
 
-    # print(render_map)
     screen_render = "\n".join("".join(item) for item in render_map)
     print(screen_render)
 
